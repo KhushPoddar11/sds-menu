@@ -1,0 +1,241 @@
+@import url(https://db.onlinewebfonts.com/c/bab15956435794e3d48309ddf0700b4c?family=Filson+Soft);
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+    transition: top 0.5s ease;
+}
+
+.menu-page{
+    margin-top: 20px;
+}
+
+.mask-trial{
+    width: 100%;
+    overflow: hidden;
+}
+
+.sds-logo{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.category-nav{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 34px 24px 24px;
+    background-color: #ffffffd9;
+    overflow-x: scroll;
+    white-space: nowrap; /* Prevent menu items from wrapping */
+}
+
+.category-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .div-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 4px 10px 2px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 0.5px solid;
+    border-color: #a3a7aa;
+    box-shadow: 0px 4px 20px #0000001a;
+}
+
+.text-wrapper {
+    font-weight: 350;
+    color: #50555b;
+    font-family: "Filson Soft";
+    font-size: 14px;
+    font-style: normal;
+    text-align: center;
+    letter-spacing: 0.28px;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+/* .category{
+    margin-top: 25px;
+}
+.category-mask{
+    width: 100%;
+    overflow: hidden;
+}
+
+.oval{
+    width: 366px;
+    height: 150px;
+    border-radius: 70px;
+    border: 6px solid #F5A800;
+} */
+
+.category {
+    margin-top: 25px;
+    position: relative;
+}
+
+.category-mask {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.oval {
+    width: 80%;
+    height: 65%;
+    border-radius: 100px;
+    border: 6px solid #F5A800;
+    position: absolute;
+    top: 15px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    background-image: url(assets/SDS-Snacks-Mask-Img.png);
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 25px; /* Adjust this value to position the text properly */
+    left: 50%;
+    transform: translateX(-50%);
+    /* color: black; 
+    font-size: 28px; 
+    font-weight: 500; 
+    /* text-align: center;
+    font-family: 'Filson Soft';
+    font-style: normal;
+    -webkit-text-stroke: 5;
+    -webkit-text-stroke-color: white; */
+}
+
+.menu{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 90px;
+}
+
+.single-item{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item-name{
+    color: #573D3E;
+    font-family: "Filson Soft";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.16px;
+}
+
+.item-price{
+    color: #573D3E;
+    font-family: "Filson Soft";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.16px;
+}
+
+#lunch-oval{
+    width: 80%;
+    height: 65%;
+    border-radius: 100px;
+    position: absolute;
+    top: 15px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    border: 6px solid #B22A2E;
+    background-image: url(assets/Indian-Tea-Karak-Chai-feature-image-2022\ 4.png);
+}
+
+#drinks-oval{
+    width: 80%;
+    height: 65%;
+    border-radius: 100px;
+    position: absolute;
+    top: 15px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    border: 6px solid #7049bc;
+    background-image: url(assets/Indian-Tea-Karak-Chai-feature-image-2022\ 2.png);
+}
+
+#fasting-oval{
+    width: 80%;
+    height: 65%;
+    border-radius: 100px;
+    position: absolute;
+    top: 15px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    border: 6px solid #3c9edf;
+    background-image: url(assets/Farali_Misal_From_Maharashtra_Ekadashi_Fast_Recipe\ 2.png);
+}
+
+#south-indian-oval{
+    width: 80%;
+    height: 65%;
+    border-radius: 100px;
+    position: absolute;
+    top: 15px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    border: 6px solid #00ae44;
+    background-image: url(assets/Indian-Tea-Karak-Chai-feature-image-2022\ 5.png);
+}
+
+#desserts-oval{
+    width: 80%;
+    height: 65%;
+    border-radius: 100px;
+    position: absolute;
+    top: 15px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    border: 6px solid #743dbc;
+    background-image: url(assets/Indian-Tea-Karak-Chai-feature-image-2022\ 3.png);
+}
+
+#add-ons-oval{
+    width: 80%;
+    height: 65%;
+    border-radius: 100px;
+    position: absolute;
+    top: 15px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    border: 6px solid #00ce7e;
+    background-image: url(assets/Indian-Tea-Karak-Chai-feature-image-2022\ 6.png);
+}
+
+.ctg-btn.active .div-wrapper{
+    background-color: green;
+    color: white;
+}
