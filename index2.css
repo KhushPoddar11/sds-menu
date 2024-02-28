@@ -1,7 +1,10 @@
 @import url(https://db.onlinewebfonts.com/c/bab15956435794e3d48309ddf0700b4c?family=Filson+Soft);
-*{
-    margin: 0;
-    padding: 0;
+
+body {
+    margin: 0 auto;
+    max-width: 450px; 
+    padding: 0; 
+    box-sizing: border-box; 
 }
 
 .header{
@@ -34,10 +37,9 @@
     gap: 12px;
     padding: 34px 24px 24px;
     background-color: #ffffffd9;
-    overflow-x: scroll;
-    white-space: nowrap; /* Prevent menu items from wrapping */
+    overflow-x: auto; 
+    white-space: nowrap;
 }
-
 .category-nav::-webkit-scrollbar {
     display: none;
   }
@@ -87,6 +89,11 @@
     position: relative;
 }
 
+.category.snacks {
+    margin-top: 0px;
+    position: relative;
+}
+
 .category-mask {
     width: 100%;
     overflow: hidden;
@@ -107,7 +114,7 @@
 
 .text-overlay {
     position: absolute;
-    bottom: 25px; /* Adjust this value to position the text properly */
+    bottom: 25px;
     left: 50%;
     transform: translateX(-50%);
     /* color: black; 
@@ -237,5 +244,8 @@
 
 .ctg-btn.active .div-wrapper{
     background-color: green;
+}
+
+.ctg-btn.active .text-wrapper{
     color: white;
 }
